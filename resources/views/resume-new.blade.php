@@ -35,7 +35,7 @@
             <div class="col-lg-2 col-6">
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="/Horizontal Logo.png" alt="logo">
                         </a>
                     </div>

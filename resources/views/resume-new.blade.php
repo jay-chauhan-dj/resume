@@ -88,7 +88,7 @@
         <div class="inner">
             <div class="menu-top">
                 <div class="menu-header">
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="/">
                         <img src="favicon.png" alt="Jay Chauhan">
                     </a>
                     <div class="close-button">

@@ -22,6 +22,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ResumeController::class, 'index']);
+Route::get('/privacy', [ResumeController::class, 'privacyPolicy']);
+Route::get('/turms', [ResumeController::class, 'turmsConditions']);
+Route::get('/refund', [ResumeController::class, 'refundPolicy']);
+Route::get('/privacy', [ResumeController::class, 'privacyPolicy']);
 Route::get('/login', [LoginController::class, 'view'])->name('login');
 Route::post('/login/submit', [LoginController::class, 'login']);
 Route::get('/admin', [IndexController::class, 'index'])->name('index');

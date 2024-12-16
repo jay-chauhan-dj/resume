@@ -831,6 +831,11 @@
                         </div>
 
                         <p class="description mt--30">© {{ date('Y') }}. All rights reserved by Jay Chauhan.</p>
+                        <small>
+                            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="/turms" target="_blank" rel="noopener noreferrer">Turm and Conditions</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="/refund" target="_blank" rel="noopener noreferrer">Refund and Cancellation Policy</a>
+                        </small>
                     </div>
                 </div>
             </div>

@@ -169,7 +169,7 @@
                             </a>
                         </div>
 
-                        <p class="description mt--30">© {{ date('Y') }}. All rights reserved by Chauhan Jay.</p>
+                        <p class="description mt--30">© {{ date('Y') }}. All rights reserved by {{ $personalDetails["businessName"] }}.</p>
                         <small>
                             <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             <a href="/turms" target="_blank" rel="noopener noreferrer">Turm and Conditions</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>

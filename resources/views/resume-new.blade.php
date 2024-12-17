@@ -114,11 +114,11 @@
                     <span class="title">find with me</span>
                     <ul class="social-share d-flex liststyle">
                         @foreach ($links as $link)
-                            <li class="instagram">
-                                <a href="{{ $link['linkAddress'] }}" target="_blank" rel="noopener noreferrer">
-                                    {!! $link['linkIcon'] !!}
-                                </a>
-                            </li>
+                        <li class="instagram">
+                            <a href="{{ $link['linkAddress'] }}" target="_blank" rel="noopener noreferrer">
+                                {!! $link['linkIcon'] !!}
+                            </a>
+                        </li>
                         @endforeach
                     </ul>
                 </div>
@@ -147,11 +147,11 @@
                                                 <!-- ROTATING TEXT -->
                                                 <span class="cd-words-wrapper">
                                                     @php
-                                                        $i = 0;
+                                                    $i = 0;
                                                     @endphp
                                                     @foreach (explode(',', $personalDetails['typed-items']) as $value)
-                                                        <b
-                                                            class="{{ ++$i == 1 ? 'is-visible' : 'is-hidden' }}">{{ $value }}</b>
+                                                    <b
+                                                        class="{{ ++$i == 1 ? 'is-visible' : 'is-hidden' }}">{{ $value }}</b>
                                                     @endforeach
                                                 </span>
                                             </span>
@@ -171,12 +171,12 @@
                                             <span class="title">find me on</span>
                                             <ul class="skill-share d-flex liststyle">
                                                 @foreach ($links as $link)
-                                                    <li>
-                                                        <a href="{{ $link['linkAddress'] }}" target="_blank"
-                                                            rel="noopener noreferrer">
-                                                            {!! $link['linkIcon'] !!}
-                                                        </a>
-                                                    </li>
+                                                <li>
+                                                    <a href="{{ $link['linkAddress'] }}" target="_blank"
+                                                        rel="noopener noreferrer">
+                                                        {!! $link['linkIcon'] !!}
+                                                    </a>
+                                                </li>
                                                 @endforeach
                                             </ul>
                                         </div>
@@ -404,24 +404,25 @@
                                                 <div class="experience-list">
 
                                                     @foreach ($education as $edu)
-                                                        <!-- Start Single List  -->
-                                                        <div data-aos="fade-up" data-aos-duration="500"
-                                                            data-aos-delay="300" data-aos-once="true"
-                                                            class="resume-single-list">
-                                                            <div class="inner">
-                                                                <div class="heading">
-                                                                    <div class="title">
-                                                                        <h4>{{ $edu['eduTitle'] }}</h4>
-                                                                        <span>{{ $edu['eduInstitute'] }}
-                                                                            ({{ date('Y', strtotime($edu['eduStartDate'])) . '-' . date('Y', strtotime($edu['eduEndDate'])) }})
-                                                                        </span>
-                                                                    </div>
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="300" data-aos-once="true"
+                                                        class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>{{ $edu['eduTitle'] }}</h4>
+                                                                    <span>{{ $edu['eduInstitute'] }}
+                                                                        ({{ date('Y', strtotime($edu['eduStartDate'])) . '-' . date('Y', strtotime($edu['eduEndDate'])) }})
+                                                                    </span>
                                                                 </div>
-                                                                <p class="description" style="text-align: justify">
-                                                                    {{ $edu['eduDesc'] }}</p>
                                                             </div>
+                                                            <p class="description" style="text-align: justify">
+                                                                {{ $edu['eduDesc'] }}
+                                                            </p>
                                                         </div>
-                                                        <!-- End Single List  -->
+                                                    </div>
+                                                    <!-- End Single List  -->
                                                     @endforeach
                                                 </div>
                                             </div>
@@ -461,7 +462,7 @@
                                                             </div>
                                                         </div>
                                                         <!-- End Single Progress Charts -->
-                                                    @endfor
+                                                        @endfor
                                                 </div>
                                             </div>
                                         </div>
@@ -488,7 +489,7 @@
                                                             </div>
                                                         </div>
                                                         <!-- End Single Progress Charts -->
-                                                    @endfor
+                                                        @endfor
                                                 </div>
                                             </div>
                                         </div>
@@ -512,27 +513,27 @@
                                                 <div class="experience-list">
 
                                                     @foreach ($experience as $exp)
-                                                        <!-- Start Single List  -->
-                                                        <div class="resume-single-list">
-                                                            <div class="inner">
-                                                                <div class="heading">
-                                                                    <div class="title">
-                                                                        <h4>{{ $exp['expTitle'] }}</h4>
-                                                                        <span>{{ $exp['expCompany'] }}
-                                                                            ({{ date('Y', strtotime($exp['expStartDate'])) }}
-                                                                            -
-                                                                            {{ $exp['flag'] == '1' ? 'Present' : date('Y', strtotime($exp['expEndDate'])) }})
-                                                                        </span>
-                                                                    </div>
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>{{ $exp['expTitle'] }}</h4>
+                                                                    <span>{{ $exp['expCompany'] }}
+                                                                        ({{ date('Y', strtotime($exp['expStartDate'])) }}
+                                                                        -
+                                                                        {{ $exp['flag'] == '1' ? 'Present' : date('Y', strtotime($exp['expEndDate'])) }})
+                                                                    </span>
                                                                 </div>
-                                                                <ul>
-                                                                    @foreach (explode('::', $exp['expDesc']) as $desc)
-                                                                        <li>{{ $desc }}</li>
-                                                                    @endforeach
-                                                                </ul>
                                                             </div>
+                                                            <ul>
+                                                                @foreach (explode('::', $exp['expDesc']) as $desc)
+                                                                <li>{{ $desc }}</li>
+                                                                @endforeach
+                                                            </ul>
                                                         </div>
-                                                        <!-- End Single List  -->
+                                                    </div>
+                                                    <!-- End Single List  -->
                                                     @endforeach
                                                 </div>
                                             </div>
@@ -568,7 +569,8 @@
                             </div>
                             <div class="title-area">
                                 <h4 class="title">
-                                    {{ $personalDetails['firstname'] . ' ' . $personalDetails['lastname'] }}</h4>
+                                    {{ $personalDetails['firstname'] . ' ' . $personalDetails['lastname'] }}
+                                </h4>
                                 <span>Software Developer</span>
                             </div>
                             <div class="description">
@@ -582,22 +584,9 @@
                                         rel="noopener noreferrer">{{ $personalDetails['email'] }}</a></span>
                                 <span class="mail">Address: <a href="{{ $personalDetails['locationLink'] }}"
                                         target="_blank"
-                                        rel="noopener noreferrer"><br>{{ $personalDetails['address-apt'] }},<br>{{ $personalDetails['address-lm'] }},<br>{{ $personalDetails['address-area'] }},<br>{{ $personalDetails['address-city'] }}
-                                        -
-                                        {{ $personalDetails['address-state'] }},<br>{{ $personalDetails['address-country'] }}
+                                        rel="noopener noreferrer"><br>{{ $personalDetails['address-apt'] }},<br>{{ $personalDetails['address-lm'] }},<br>{{ $personalDetails['address-area'] }},<br>{{ $personalDetails['address-city'] }} - {{ $personalDetails['address-state'] }},<br>{{ $personalDetails['address-country'] }}
                                         - {{ $personalDetails['address-pin'] }}.</a></span>
                             </div>
-                            <!-- <div class="social-area">
-                                <div class="name">FIND WITH ME</div>
-                                <div class="social-icone">
-                                    @foreach ($links as $link)
-                                        <a href="{{ $link['linkAddress'] }}" target="_blank"
-                                            rel="noopener noreferrer">
-                                            {!! $link['linkIcon'] !!}
-                                        </a>
-                                    @endforeach
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                     <div data-aos-delay="600" class="col-lg-7 contact-input">
@@ -682,14 +671,14 @@
 
                         <p class="description mt--30">© {{ date('Y') }}. All rights reserved by Jay Chauhan.</p>
                         <!-- <small> -->
-                            <small>
-                                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy
-                                    Policy</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <a href="/turms" target="_blank" rel="noopener noreferrer">Turm and
-                                    Conditions</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <a href="/refund" target="_blank" rel="noopener noreferrer">Refund and Cancellation
-                                    Policy</a>
-                            </small>
+                        <small>
+                            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy
+                                Policy</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="/turms" target="_blank" rel="noopener noreferrer">Turm and
+                                Conditions</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="/refund" target="_blank" rel="noopener noreferrer">Refund and Cancellation
+                                Policy</a>
+                        </small>
                         <!-- </small> -->
                     </div>
                 </div>

@@ -669,7 +669,7 @@
                             </a>
                         </div>
 
-                        <p class="description mt--30">© {{ date('Y') }}. All rights reserved by Jay Chauhan.</p>
+                        <p class="description mt--30">© {{ date('Y') }}. All rights reserved by Chauhan Jay.</p>
                         <!-- <small> -->
                         <small>
                             <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy

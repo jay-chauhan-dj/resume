@@ -580,12 +580,14 @@
                                         href="https://mail.google.com/mail/u/0/?fs=1&to={{ $personalDetails['email'] }}&tf=cm"
                                         target="_blank"
                                         rel="noopener noreferrer">{{ $personalDetails['email'] }}</a></span>
-                                <span class="mail">Address: <a
-                                        href="{{ $personalDetails['locationLink'] }}"
+                                <span class="mail">Address: <a href="{{ $personalDetails['locationLink'] }}"
                                         target="_blank"
-                                        rel="noopener noreferrer"><br>{{ $personalDetails['address-apt'] }},<br>{{ $personalDetails['address-lm'] }},<br>{{ $personalDetails['address-area'] }},<br>{{ $personalDetails['address-city'] }} - {{ $personalDetails['address-state'] }},<br>{{ $personalDetails['address-country'] }} - {{ $personalDetails['address-pin'] }}.</a></span>
+                                        rel="noopener noreferrer"><br>{{ $personalDetails['address-apt'] }},<br>{{ $personalDetails['address-lm'] }},<br>{{ $personalDetails['address-area'] }},<br>{{ $personalDetails['address-city'] }}
+                                        -
+                                        {{ $personalDetails['address-state'] }},<br>{{ $personalDetails['address-country'] }}
+                                        - {{ $personalDetails['address-pin'] }}.</a></span>
                             </div>
-                            <div class="social-area">
+                            <!-- <div class="social-area">
                                 <div class="name">FIND WITH ME</div>
                                 <div class="social-icone">
                                     @foreach ($links as $link)
@@ -595,7 +597,7 @@
                                         </a>
                                     @endforeach
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div data-aos-delay="600" class="col-lg-7 contact-input">
@@ -679,11 +681,16 @@
                         </div>
 
                         <p class="description mt--30">© {{ date('Y') }}. All rights reserved by Jay Chauhan.</p>
-                        <small>
-                            <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <a href="/turms" target="_blank" rel="noopener noreferrer">Turm and Conditions</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <a href="/refund" target="_blank" rel="noopener noreferrer">Refund and Cancellation Policy</a>
-                        </small>
+                        <!-- <small> -->
+                            <small>
+                                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy
+                                    Policy</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <a href="/turms" target="_blank" rel="noopener noreferrer">Turm and
+                                    Conditions</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <a href="/refund" target="_blank" rel="noopener noreferrer">Refund and Cancellation
+                                    Policy</a>
+                            </small>
+                        <!-- </small> -->
                     </div>
                 </div>
             </div>

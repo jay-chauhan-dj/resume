@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ResumeController::class, 'index']);
+Route::get('/index', [ResumeController::class, 'index']);
 Route::get('/privacy', [ResumeController::class, 'privacyPolicy']);
 Route::get('/turms', [ResumeController::class, 'turmsConditions']);
 Route::get('/refund', [ResumeController::class, 'refundPolicy']);

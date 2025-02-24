@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google -->
     <meta name="google-site-verification" content="7l9rvaUEK74Sk3NfrTUgx0ZbIeHoq49BKK_1JwGGjgY" />
+    <meta name="google-site-verification" content="1E2Lmv4oUhPxFNnmbzFngtcQRNCvPEB6JckLY7E17_s" />
     <!-- Facebook -->
     <meta name="facebook-domain-verification" content="aed0xbgyhjiuqaib69aahkajeganqa" />
 </head>

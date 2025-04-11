@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jay Chauhan | Portfolio</title>
+    <title>Jay Chauhan | Software Developer</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,7 +37,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="/">
-                            <img src="/Horizontal Logo.png" alt="logo">
+                            <img src="/logo.svg" alt="Jay Chauhan Logo">
                         </a>
                     </div>
                 </div>
@@ -665,8 +665,8 @@
                     <div class="footer-area text-center">
 
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="/Jay Chauhan Logo.png" alt="logo">
+                            <a href="/">
+                                <img src="/logo.svg" alt="Jay Chauhan Logo">
                             </a>
                         </div>
 

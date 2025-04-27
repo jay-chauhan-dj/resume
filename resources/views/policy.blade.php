@@ -36,7 +36,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="/">
-                            <img src="/Horizontal Logo.png" alt="logo">
+                            <img src="/logo.svg" alt="Jay Chauhan Logo">
                         </a>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
                         <!-- Start Mainmanu Nav -->
                         <ul class="primary-menu nav nav-pills">
-                            <li class="nav-item"><a class="nav-link" href="{{ url('/') . '#home' }}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/') . '#features' }}">Features</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/') . '#resume' }}">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('/') . '#contacts' }}">Contact</a></li>
@@ -165,7 +165,7 @@
 
                         <div class="logo">
                             <a href="index.html">
-                                <img src="/Jay Chauhan Logo.png" alt="logo">
+                                <img src="/logo.svg" alt="Jay Chauhan Logo">
                             </a>
                         </div>
 
